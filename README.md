@@ -1,5 +1,8 @@
 # Mario Royale Desktop
 The Official Desktop app for Mario Royale, built using Electron
 
-## Quick Start Guide
-If you want to develop this on your own, first install [Node.js and npm](https://nodejs.org). Then clone the repository. Open a Terminal/Command Prompt and run the command `npm install`. This will install all of the dependencies. Then simply run `npm start` to run the application.
+## Download
+To download the latest version please visit the [releases](https://github.com/mroyale/MarioRoyaleDesktop/releases) page.
+
+## Development
+Development is mostly done by ddmil, however if you wish to contribute please see [develop.md](https://github.com/mroyale/MarioRoyaleDesktop/develop.md) for a guide on how to start.
