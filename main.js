@@ -1,7 +1,7 @@
 // Modules to control application life and create native browser window
 const {app, BrowserWindow} = require('electron')
 const path = require('path')
-const client = require('discord-rich-presence')('605040020851523585');
+const find = require('find-process');
  
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -55,12 +55,26 @@ app.on('activate', function () {
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
-client.updatePresence({
-  //state: 'Running Tests',
-  //details: 'Testing',
-  startTimestamp: Date.now(),
-  //endTimestamp: Date.now() + 1337,
-  largeImageKey: 'logo',
-  //smallImageKey: 'snek_small',
-  instance: true,
-});
+
+find('name', 'Discord', true)
+    .then(function (list) {
+      console.log('There are %s Discord process(es)', list.length);
+      if (list.length !== 0) {
+        console.log('Running Rich Presence Code');
+        const client = require('discord-rich-presence')('605040020851523585');
+        client.updatePresence({
+          //state: 'Running Tests',
+          //details: 'Testing',
+          startTimestamp: Date.now(),
+          //endTimestamp: Date.now() + 1337,
+          largeImageKey: 'logo',
+          //smallImageKey: 'snek_small',
+          instance: true,
+        });
+      } else {
+        console.log('RPC not activated');
+      };
+    });
+
+
+
