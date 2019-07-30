@@ -1,5 +1,5 @@
 # Mario Royale Desktop
-The Official Desktop app for Mario Royale, built using Electron. Also I'm looking for someone to help with MacOS binaries, if you can help please let me know on the [issues page]()
+The Official Desktop app for Mario Royale, built using Electron. Also I'm looking for someone to help with MacOS binaries, if you can help please let me know on the [issues page](https://github.com/mroyale/MarioRoyaleDesktop/issues)
 
 ## Download
 To download the latest version please visit the [releases](https://github.com/mroyale/MarioRoyaleDesktop/releases) page.
