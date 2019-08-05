@@ -80,8 +80,8 @@ find('name', 'Discord', true)
         console.log('Running Rich Presence Code');
         const client = require('discord-rich-presence')('605040020851523585');
         client.updatePresence({
-          state: 'Running Tests',
-          details: 'Testing',
+          //state: 'Running Tests',
+          //details: 'Testing',
           startTimestamp: Date.now(),
           //endTimestamp: Date.now() + 1337,
           largeImageKey: 'logo',
